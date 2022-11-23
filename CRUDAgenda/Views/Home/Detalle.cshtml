@@ -1,0 +1,36 @@
+﻿@model CRUDAgenda.Models.Contacto
+
+@{
+    ViewData["Title"] = "Detalles Contacto";
+}
+
+<h1 class="text-center">DIRECTORIO DE CONTACTO</h1>
+
+
+<div class="row justify-content-center mt-5">
+    <div class="col-6">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h3 class="text-white"><strong>Detalles del Usuario</strong></h3>
+            </div>
+            <div class="card-body">
+
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Nombres:</strong> @Html.DisplayFor(m => m.Nombres)</li>
+                    <li class="list-group-item"><strong>Apellidos:</strong> @Html.DisplayFor(m => m.Apellidos)</li>
+                    <li class="list-group-item"><strong>Celular:</strong> @Html.DisplayFor(m => m.Celular)</li>
+                    <li class="list-group-item"><strong>Direccion:</strong> @Html.DisplayFor(m => m.Direccion)</li>
+                    <li class="list-group-item"><strong>Email:</strong> @Html.DisplayFor(m => m.Email)</li>
+
+                </ul>
+
+                <div class="text-center">
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-secondary mt-3">Volver</a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
